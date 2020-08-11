@@ -5,3 +5,5 @@ FROM docker.elastic.co/elasticsearch/elasticsearch:${ELK_VERSION}
 
 # Add your elasticsearch plugins setup here
 # Example: RUN elasticsearch-plugin install analysis-icu
+COPY config/lawcom_dic.txt config/lawcom_dic.txt
+COPY config/synonyms.txt config/synonyms.txt
